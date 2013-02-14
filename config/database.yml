@@ -1,24 +1,23 @@
+---
 development:
   adapter: postgresql
   encoding: utf8
-  hostname:
-  username: squash
-  password:
+  host: localhost
+  username: postgres
+  password: postgres
   database: squash_development
-
 test:
   adapter: postgresql
   encoding: utf8
-  hostname:
-  username: squash
-  password:
+  host: localhost
+  username: postgres
+  password: postgres
   database: squash_test
-
 production:
   adapter: postgresql
   encoding: utf8
-  hostname:
-  username: squash
-  password:
+  host: localhost
+  username: postgres
+  password: postgres
   database: squash_production
   pool: 30
