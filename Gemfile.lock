@@ -79,6 +79,12 @@ GEM
     arel (3.0.2)
     boolean (1.0.1)
     builder (3.0.4)
+    capistrano (2.14.2)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -112,6 +118,7 @@ GEM
     font-awesome-rails (3.0.2.0)
       railties (>= 3.1)
     hike (1.2.2)
+    highline (1.6.15)
     httpi (2.0.2)
       rack
     i18n (0.6.4)
@@ -143,6 +150,15 @@ GEM
     mime-types (1.23)
     multi_json (1.7.2)
     pg (0.15.1)
+    net-ldap (0.3.1)
+    net-scp (1.1.0)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.1)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.6.5)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
+    oauth (0.4.7)
     plist (3.1.0)
     polyglot (0.3.3)
     rack (1.4.5)
@@ -240,6 +256,7 @@ DEPENDENCIES
   activerecord-jdbc-adapter (= 1.2.5)
   activerecord-jdbcpostgresql-adapter
   activerecord-postgresql-cursors
+  capistrano
   coffee-rails
   composite_primary_keys!
   configoro (>= 1.2.4)
