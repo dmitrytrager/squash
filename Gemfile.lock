@@ -187,6 +187,8 @@ GEM
       rspec-expectations (~> 2.13.0)
       rspec-mocks (~> 2.13.0)
     sass (3.2.8)
+    rvm-capistrano (1.2.7)
+      capistrano (>= 2.0.0)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
       sass (>= 3.1.10)
@@ -280,6 +282,7 @@ DEPENDENCIES
   rails!
   redcarpet
   rspec-rails
+  rvm-capistrano
   sass-rails
   slugalicious
   sql_origin
