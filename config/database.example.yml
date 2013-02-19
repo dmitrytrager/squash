@@ -19,5 +19,5 @@ production:
   host: localhost
   username: postgres
   password: postgres
-  database: squash_production
+  database: squash
   pool: 30
