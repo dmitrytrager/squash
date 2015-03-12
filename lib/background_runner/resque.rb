@@ -30,6 +30,8 @@ end
 #
 # resque-web lib/background_runner/resque.rb
 
-if File.expand_path(ARGV.first, Dir.getwd) == File.expand_path(__FILE__, Dir.getwd)
-  BackgroundRunner::Resque.setup
+if ARGV.first
+  if File.expand_path(ARGV.first, Dir.getwd) == File.expand_path(__FILE__, Dir.getwd)
+    BackgroundRunner::Resque.setup
+  end
 end
