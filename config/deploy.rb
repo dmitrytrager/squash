@@ -7,7 +7,7 @@ set :repo_url, "git@github.com:dmitrytrager/#{fetch(:application)}.git"
 # set :branch, :master
 # ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
 
-# set :linked_files, fetch(:linked_files, []).push("config/database.yml")
+set :linked_files, fetch(:linked_files, []).push("config/database.yml")
 set :linked_dirs,
   fetch(:linked_dirs, []).push(
     "log",
@@ -25,6 +25,7 @@ namespace :deploy do
       invoke "unicorn:restart"
     end
   end
+
   after :finishing, :compile_assets
   after :finishing, :cleanup
   after :finishing, :restart

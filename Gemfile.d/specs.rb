@@ -1,5 +1,7 @@
 group :test do
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
-  gem 'fakeweb'
+  gem "rspec-rails"
+  gem "factory_girl_rails"
+  gem "fakeweb"
 end
+
+gem "test-unit"
